@@ -1,0 +1,6 @@
+SET max_heap_table_size = 1024 * 1024 * 1024 * 2;
+SET tmp_table_size = 1024 * 1024 * 1024 * 2;
+
+CREATE TABLE TMP_MEMORY ENGINE=MEMORY DEFAULT CHARSET=latin1
+SELECT *
+FROM BIG_DATA;
